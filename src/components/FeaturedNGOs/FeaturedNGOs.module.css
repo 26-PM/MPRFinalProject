@@ -1,0 +1,177 @@
+.featuredNGOs {
+    padding: 5rem 0;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    position: relative;
+  }
+  
+  .sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    transform: translateX(-50%);
+  }
+  
+  .ngosContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .ngoCard {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ngoCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ngoLogo {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    margin-bottom: 1rem;
+  }
+  
+  .placeholderLogo {
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .ngoName {
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  .ngoDescription {
+    padding: 0 1.5rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    flex-grow: 1;
+  }
+  
+  .urgentNeeds {
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .urgentNeeds h4 {
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .urgentNeeds ul {
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .urgentNeeds li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .ngoActions {
+    display: flex;
+    border-top: 1px solid #f1f1f1;
+  }
+  
+  .btnViewProfile, .btnDonate {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btnViewProfile {
+    color: #7f8c8d;
+  }
+  
+  .btnDonate {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .btnViewProfile:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .btnDonate:hover {
+    background-color: #2980b9;
+  }
+  
+  .viewAll {
+    text-align: center;
+  }
+  
+  .btnViewAllNGOs {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btnViewAllNGOs:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 1024px) {
+    .ngosContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .ngosContainer {
+      grid-template-columns: 1fr;
+    }
+  }

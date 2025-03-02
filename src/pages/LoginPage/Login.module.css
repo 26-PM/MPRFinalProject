@@ -1,0 +1,160 @@
+/* Login.module.css */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #f7f9fc;
+    padding: 20px;
+  }
+  
+  .loginCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .loginTitle {
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    text-align: center;
+  }
+  
+  .loginSubtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  
+  .formLabel {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .formInput {
+    padding: 12px 16px;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+  }
+  
+  .formInput:focus {
+    border-color: #4a6cf7;
+    outline: none;
+  }
+  
+  .inputError {
+    border-color: #ff3b30;
+  }
+  
+  .errorText {
+    color: #ff3b30;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .passwordInputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .passwordToggle {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .forgotPasswordContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+  
+  .forgotPasswordLink {
+    color: #4a6cf7;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .forgotPasswordLink:hover {
+    text-decoration: underline;
+  }
+  
+  .loginButton {
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginButton:hover {
+    background-color: #3a5ddb;
+  }
+  
+  .signupContainer {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signupLink {
+    color: #4a6cf7;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .signupLink:hover {
+    text-decoration: underline;
+  }
+  
+  .userTypeToggle {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+  
+  .userTypeLink {
+    color: #4a6cf7;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .userTypeLink:hover {
+    text-decoration: underline;
+  }

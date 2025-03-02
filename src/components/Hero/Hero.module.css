@@ -1,0 +1,167 @@
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .content {
+    max-width: 700px;
+  }
+  
+  .content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btnDonate, .btnLearnMore {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .btnDonate {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .btnDonate:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btnLearnMore {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btnLearnMore:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .searchNGO {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .searchNGO h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .searchBox {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .searchBox input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .searchBox button {
+    padding: 0 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .searchBox button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .content p {
+      font-size: 1rem;
+    }
+    
+    .buttons {
+      flex-direction: column;
+    }
+    
+    .btnDonate, .btnLearnMore {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      min-height: 500px;
+    }
+    
+    .content h1 {
+      font-size: 2rem;
+    }
+    
+    .searchBox {
+      flex-direction: column;
+    }
+    
+    .searchBox button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
