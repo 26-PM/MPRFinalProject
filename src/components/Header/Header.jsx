@@ -68,6 +68,11 @@ const Header = () => {
                 Sign Up
               </a>
             </li>
+            <li>
+              <a href="/donation" className={styles.btnLogin}>
+                Donate
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

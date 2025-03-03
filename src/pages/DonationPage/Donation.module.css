@@ -1,0 +1,163 @@
+/* General container styling */
+.container {
+  width: 90vw;
+  max-width: 600px; /* Maintain a structured width */
+  margin: 12vh auto 50px; /* Balanced spacing */
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Subtle hover effect for elevation */
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings: Elegant typography */
+h2, h3 {
+  text-align: center;
+  color: #222;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Fieldset: Structured input sections */
+.itemFieldset {
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Interactive fieldset effect */
+.itemFieldset:hover {
+  background: #f0f0f0;
+  border-color: #bbb;
+}
+
+/* Labels: Clean and modern */
+label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Inputs & Select Dropdowns */
+select, input {
+  width:80%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: #ffffff;
+  color: #333;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Focus effect */
+select:focus, input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* File input styling */
+input[type="file"] {
+  padding: 8px;
+}
+
+/* Buttons: Modern, Consistent Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Button Colors & Effects */
+.addBtn {
+  background: #007bff;
+  color: white;
+}
+
+.addBtn:hover {
+  background: #0056b3;
+}
+
+.removeBtn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.removeBtn:hover {
+  background: #cc0000;
+}
+
+.asapBtn {
+  background: #28a745;
+  color: white;
+}
+
+.asapBtn:hover {
+  background: #1e7e34;
+}
+
+.gpsBtn {
+  background: #ff9800;
+  color: white;
+}
+
+.gpsBtn:hover {
+  background: #e68900;
+}
+
+.submitBtn {
+  background: #4caf50;
+  color: white;
+  margin-top: 20px;
+}
+
+.submitBtn:hover {
+  background: #388e3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 95vw;
+    padding: 18px;
+  }
+
+  select, input, button {
+    width: 100%;
+  }
+
+  h2, h3 {
+    font-size: 1.4rem;
+  }
+}
